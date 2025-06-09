@@ -15,10 +15,10 @@ import "./styles.css";
 
 function Thing() {
   const texs = useTexture([
-    "/grassy_cobble/grassy_cobblestone_diff_2k.jpg",
-    "/grassy_cobble/grassy_cobblestone_nor_gl_2k.jpg", //
-    "/grassy_cobble/grassy_cobblestone_rough_2k.jpg",
-    "/grassy_cobble/grassy_cobblestone_ao_2k.jpg",
+    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_diff_2k.jpg",
+    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_nor_gl_2k.jpg", //
+    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_rough_2k.jpg",
+    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_ao_2k.jpg",
   ]);
 
   useLayoutEffect(() => {
@@ -30,7 +30,9 @@ function Thing() {
 
   const [diffuse, normal, roughness, ao] = texs;
 
-  const leafTexture = useTexture("/other/leaves.jpg");
+  const leafTexture = useTexture(
+    "/demo-2023-spotlight-shadows/other/leaves.jpg"
+  );
 
   return (
     <>
