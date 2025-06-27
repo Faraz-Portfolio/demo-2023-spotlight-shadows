@@ -11,7 +11,6 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useLayoutEffect } from "react";
 import { MathUtils, RepeatWrapping } from "three";
 import Lights from "./components/Lights";
-import "./styles.css";
 
 function Thing() {
   const texs = useTexture([
