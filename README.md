@@ -1,8 +1,7 @@
-# React + Vite
+# Spotlight Shadows
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+View Live: https://farazzshaikh.com/demos/demo-2023-spotlight-shadows
 
-Currently, two official plugins are available:
+[demo-2023-spotlight-shadows.webm](https://github.com/user-attachments/assets/b756c11a-f6a7-4a1b-9db5-3880cc451f6f)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A demo made for the `<SpotLightShadows />` component I had written and contributed to [`@react-three/drei`](https://github.com/pmndrs/drei). 
