@@ -12,12 +12,14 @@ import { Suspense, useLayoutEffect } from "react";
 import { MathUtils, RepeatWrapping } from "three";
 import Lights from "./components/Lights";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 function Thing() {
   const texs = useTexture([
-    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_diff_2k.jpg",
-    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_nor_gl_2k.jpg", //
-    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_rough_2k.jpg",
-    "/demo-2023-spotlight-shadows/grassy_cobble/grassy_cobblestone_ao_2k.jpg",
+    baseUrl + "grassy_cobble/grassy_cobblestone_diff_2k.jpg",
+    baseUrl + "grassy_cobble/grassy_cobblestone_nor_gl_2k.jpg", //
+    baseUrl + "grassy_cobble/grassy_cobblestone_rough_2k.jpg",
+    baseUrl + "grassy_cobble/grassy_cobblestone_ao_2k.jpg",
   ]);
 
   useLayoutEffect(() => {
@@ -30,7 +32,7 @@ function Thing() {
   const [diffuse, normal, roughness, ao] = texs;
 
   const leafTexture = useTexture(
-    "/demo-2023-spotlight-shadows/other/leaves.jpg"
+    "/demo-2023-spotlight-shadows/other/leaves.jpg",
   );
 
   return (
